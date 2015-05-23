@@ -1,4 +1,4 @@
-# eslintrc
+# eslint-config-tlvince
 
 > ESLint rule customisations
 
