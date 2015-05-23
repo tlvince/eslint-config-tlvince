@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "js-yaml eslintrc.yml > eslintrc.json",
-    "test": "node test",
+    "test": "npm run build && node test",
     "prepublish": "npm run build && semantic-release pre",
     "postpublish": "semantic-release post",
-    "watch": "onchange eslintrc.yml -- npm run build"
+    "watch": "onchange eslintrc.yml test -- npm run test"
   },
   "repository": {
     "type": "git",

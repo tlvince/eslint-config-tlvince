@@ -1,6 +1,6 @@
 'use strict';
 
 var assert = require('assert');
-var config = require('./');
+var config = require('../');
 
-assert.ok(config);
+assert.ok(config.rules);
