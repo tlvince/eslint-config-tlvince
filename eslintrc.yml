@@ -46,7 +46,7 @@ rules:
   linebreak-style: unix
   one-var:
     - 2
-    - always
+    - never
   no-continue: 2
   dot-location:
     - 2
