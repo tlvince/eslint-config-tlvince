@@ -4,9 +4,11 @@
   "description": "ESLint rule customisations",
   "main": "index.js",
   "scripts": {
+    "build": "js-yaml eslintrc.yml > eslintrc.json",
     "test": "echo it works",
-    "prepublish": "semantic-release pre",
-    "postpublish": "semantic-release post"
+    "prepublish": "npm run build && semantic-release pre",
+    "postpublish": "semantic-release post",
+    "watch": "onchange eslintrc.yml -- npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,11 +25,10 @@
     "url": "https://github.com/tlvince/eslint-config-tlvince/issues"
   },
   "homepage": "https://github.com/tlvince/eslint-config-tlvince",
-  "dependencies": {
-    "js-yaml": "^3.3.1"
-  },
   "devDependencies": {
     "eslint": "^0.21.2",
+    "js-yaml": "^3.3.1",
+    "onchange": "^1.1.0",
     "semantic-release": "^3.3.1"
   }
 }
