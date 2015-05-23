@@ -1,10 +1,12 @@
 {
   "name": "eslint-config-tlvince",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "ESLint rule customisations",
   "main": "index.js",
   "scripts": {
-    "test": "echo it works"
+    "test": "echo it works",
+    "prepublish": "semantic-release pre",
+    "postpublish": "semantic-release post"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
     "js-yaml": "^3.3.1"
   },
   "devDependencies": {
-    "eslint": "^0.21.2"
+    "eslint": "^0.21.2",
+    "semantic-release": "^3.3.1"
   }
 }
