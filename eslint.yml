@@ -42,4 +42,18 @@ rules:
   indent:
     - 2
     - 2
-  space-before-function-parentheses: never
+  space-before-function-paren: never
+  linebreak-style: unix
+  one-var:
+    - 2
+    - always
+  no-continue: 2
+  dot-location:
+    - 2
+    - property
+  newline-after-var:
+    - 2
+    - always
+  operator-linebreak:
+    - 2
+    - after
