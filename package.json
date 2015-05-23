@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "js-yaml eslintrc.yml > eslintrc.json",
-    "test": "echo it works",
+    "test": "node test",
     "prepublish": "npm run build && semantic-release pre",
     "postpublish": "semantic-release post",
     "watch": "onchange eslintrc.yml -- npm run build"
