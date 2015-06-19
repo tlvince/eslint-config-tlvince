@@ -45,7 +45,9 @@ rules:
   space-before-function-paren:
     - 2
     - never
-  linebreak-style: unix
+  linebreak-style:
+    - 2
+    - unix
   one-var:
     - 2
     - never
