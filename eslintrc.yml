@@ -65,4 +65,3 @@ rules:
   object-curly-spacing:
     - 2
     - always
-  spaced-comment: 2
