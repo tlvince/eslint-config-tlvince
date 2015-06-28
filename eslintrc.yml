@@ -66,3 +66,7 @@ rules:
     - 2
     - always
   spaced-comment: 2
+  no-unexpected-multiline: 2
+  array-bracket-spacing:
+    - 2
+    - always
