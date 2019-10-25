@@ -20,7 +20,7 @@ Opinionated [ESLint rule definitions][eslint]. Write JavaScript in
 The short story:
 
 ```shell
-npm i -D eslint-config-tlvince
+npm i -D eslint prettier typescript eslint-config-tlvince
 echo "extends: tlvince" >> .eslintrc
 ```
 
@@ -29,15 +29,15 @@ The long story:
 1. Install from npm:
 
     ```shell
-    npm install --save-dev eslint-config-tlvince
+    npm install --save-dev eslint prettier typescript eslint-config-tlvince
     ```
 
-2. Enable the module by adding the `extends` keyword to `.eslintrc`. YAML
-   variant:
+2. Enable the module by adding the `extends` keyword to `.eslintrc`. YAML variant:
 
     ```yaml
     extends: tlvince
     ```
+
    … or if JSON is your thing:
 
     ```json
