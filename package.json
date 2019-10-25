@@ -1,14 +1,11 @@
 {
   "name": "eslint-config-tlvince",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "description": "ESLint rule customisations",
   "main": "index.js",
   "scripts": {
-    "build": "js-yaml eslintrc.yml > eslintrc.json",
-    "test": "npm run build && node test",
-    "prepublish": "npm run build && semantic-release pre",
-    "postpublish": "semantic-release post",
-    "watch": "onchange eslintrc.yml test -- npm run test"
+    "test": "./test.js",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -25,10 +22,26 @@
     "url": "https://github.com/tlvince/eslint-config-tlvince/issues"
   },
   "homepage": "https://github.com/tlvince/eslint-config-tlvince",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "2.5.0",
+    "@typescript-eslint/parser": "2.5.0",
+    "eslint-config-prettier": "6.4.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.20.0",
+    "eslint-plugin-prettier": "3.1.1"
+  },
   "devDependencies": {
-    "eslint": "^0.21.2",
-    "js-yaml": "^3.3.1",
-    "onchange": "^1.1.0",
-    "semantic-release": "^3.3.1"
+    "eslint": "6.5.1",
+    "prettier": "1.18.2",
+    "typescript": "3.6.4",
+    "semantic-release": "15.13.27"
+  },
+  "peerDependencies": {
+    "eslint": ">= 6",
+    "prettier": ">= 1",
+    "typescript": ">= 3"
   }
 }

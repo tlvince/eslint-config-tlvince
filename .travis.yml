@@ -1,18 +1,16 @@
 sudo: false
 language: node_js
 node_js:
-- '0.10'
-cache:
-  directories:
-  - node_modules
+  - 10
+cache: yarn
 notifications:
   email: false
-before_install:
-- npm config set spin false --global
 deploy:
   provider: npm
   email: npm@tlvince.com
   skip_cleanup: true
+  script:
+    - npx semantic-release
   on:
     branch: master
     repo: tlvince/eslint-config-tlvince
