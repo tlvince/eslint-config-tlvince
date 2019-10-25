@@ -7,10 +7,6 @@ notifications:
   email: false
 after_success:
   - yarn semantic-release
-deploy:
-  provider: npm
-  email: npm@tlvince.com
-  skip_cleanup: true
-  on:
-    branch: master
-    repo: tlvince/eslint-config-tlvince
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
