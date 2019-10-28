@@ -37,7 +37,7 @@
     "eslint": "6.5.1",
     "prettier": "1.18.2",
     "typescript": "3.6.4",
-    "semantic-release": "15.13.27"
+    "semantic-release": "15.13.28"
   },
   "peerDependencies": {
     "eslint": ">= 6",
