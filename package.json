@@ -4,6 +4,7 @@
   "description": "ESLint rule customisations",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint *.js",
     "test": "./test.js",
     "semantic-release": "semantic-release"
   },
