@@ -41,7 +41,7 @@
     "husky": "3.1.0",
     "lint-staged": "9.4.3",
     "prettier": "1.19.1",
-    "semantic-release": "15.13.30",
+    "semantic-release": "15.13.31",
     "typescript": "3.7.2"
   },
   "peerDependencies": {
