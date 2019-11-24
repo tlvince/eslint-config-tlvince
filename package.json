@@ -4,7 +4,10 @@
   "description": "ESLint rule customisations",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint *.js",
+    "lint": "yarn eslint && yarn prettier --check",
+    "lint:fix": "yarn eslint --fix && yarn prettier --write",
+    "eslint": "eslint '**/*.{js,jsx,ts,tsx,json}'",
+    "prettier": "prettier '**/*.{js,jsx,ts,tsx,json,css,md}'",
     "test": "./test.js",
     "semantic-release": "semantic-release"
   },

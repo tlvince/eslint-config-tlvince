@@ -28,23 +28,23 @@ The long story:
 
 1. Install from npm:
 
-    ```shell
-    npm install --save-dev eslint prettier typescript eslint-config-tlvince
-    ```
+   ```shell
+   npm install --save-dev eslint prettier typescript eslint-config-tlvince
+   ```
 
 2. Enable the module by adding the `extends` keyword to `.eslintrc`. YAML variant:
 
-    ```yaml
-    extends: tlvince
-    ```
+   ```yaml
+   extends: tlvince
+   ```
 
    … or if JSON is your thing:
 
-    ```json
-    {
-      "extends": "tlvince"
-    }
-    ```
+   ```json
+   {
+     "extends": "tlvince"
+   }
+   ```
 
 ## Author
 
