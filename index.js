@@ -5,8 +5,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
+    'plugin:import/recommended',
     'plugin:import/typescript',
   ],
   parserOptions: {
@@ -23,6 +22,31 @@ module.exports = {
         trailingComma: 'es5',
       },
     ],
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          ['parent', 'sibling', 'index'],
+        ],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+      },
+    ],
+    'import/no-useless-path-segments': [
+      'error',
+      {
+        noUselessIndex: true,
+      },
+    ],
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
+    'import/no-unassigned-import': 'error',
   },
   env: {
     es6: true,
